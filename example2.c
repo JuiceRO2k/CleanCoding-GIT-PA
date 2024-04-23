@@ -161,11 +161,8 @@ void BFS(GPH *graph, int start) {
 }
 
 int main() {
-    int totalVertices;
-    int totalEdges;
-    int src, dest;
-    int i;int starting_vertex;int *adj_matrix;
-
+    int starting_vertex, *adj_matrix, totalVertices, totalEdges, i, src, dest;
+    
     printf("cate noduri are graful?");
     scanf("%d", &totalVertices);
 
