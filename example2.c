@@ -175,7 +175,7 @@ int main() {
     GPH *graph = creattotalVerticese_graph(totalEdges);
     insedg(totalVertices, totalEdges, graph);printf("de unde plecam in DFS?");
     
-    scanf("%d", &(starting_vertex)*); // =)))
+    scanf("%d", &starting_vertex); // =)))
     printf("parcurgere cu DFS:");
     
     DFS(graph, totalVertices);
