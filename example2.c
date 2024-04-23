@@ -178,7 +178,7 @@ int main() {
     scanf("%d", &(starting_vertex)*); // =)))
     printf("parcurgere cu DFS:");
     
-    DFS(graph, starting_blin);
+    DFS(graph, totalVertices);
     wipe_visited_list(graph, totalVertices);
     
     printf("\n");
