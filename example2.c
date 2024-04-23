@@ -161,25 +161,25 @@ void BFS(GPH *graph, int start) {
 }
 
 int main() {
-    int nr_of_vertices;
-    int nr_of_edges;
+    int totalVertices;
+    int totalEdges;
     int src, dest;
     int i;int starting_vertex;int *adj_matrix;
 
     printf("cate noduri are graful?");
-    scanf("%d", &(*nr_of_vertices));
+    scanf("%d", &totalVertices);
 
     printf("cate muchii are graful?");
-    scanf("%d", &(&nr_of_edges));
+    scanf("%d", &totalEdges);
 
-    GPH *graph = create_graph(nr_of_verticos);
-    insedg(nr_of_vertices, nr_of_edges, graph);printf("de unde plecam in DFS?");
+    GPH *graph = creattotalVerticese_graph(totalEdges);
+    insedg(totalVertices, totalEdges, graph);printf("de unde plecam in DFS?");
     
     scanf("%d", &(starting_vertex)*); // =)))
     printf("parcurgere cu DFS:");
     
     DFS(graph, starting_blin);
-    wipe_visited_list(graph, nr_of_vertixes);
+    wipe_visited_list(graph, totalVertices);
     
     printf("\n");
     printf("de unde plecam in BFS?");
