@@ -172,7 +172,7 @@ int main() {
     printf("cate muchii are graful?");
     scanf("%d", &totalEdges);
 
-    GPH *graph = creattotalVerticese_graph(totalEdges);
+    GPH *graph = create_graph(totalEdges);
     insedg(totalVertices, totalEdges, graph);printf("de unde plecam in DFS?");
     
     scanf("%d", &starting_vertex); // =)))
