@@ -100,9 +100,9 @@ void wipe_visited_list(GPH *graph, int nr_of_vertices) {
 }
 
 void DFS(GPH *graph, int vertex_nr) {
-    NODE *adj_list = graph->adjacency_lists[vertex_nr];
     graph->visited[vertex_nr] = 1;
     printf("%d->", vertex_nr);
+    NODE *adj_list = graph->adjacency_lists[vertex_nr];
     NODE *temp = adj_list;
     while (temp != NULL) {
         int connected_vertex = temp->data;
@@ -112,6 +112,7 @@ void DFS(GPH *graph, int vertex_nr) {
         temp = temp->next;
     }
 }
+
 
 void BFS(GPH *graph, int start) {
     NODE *queue = NULL;
@@ -141,12 +142,13 @@ int main() {
     GPH *graph = create_graph(totalVertices);
     insedg(totalVertices, totalEdges, graph);
     
+    wipe_visited_list(graph, totalVertices);
     printf("De unde plecam in DFS? ");
     scanf("%d", &starting_vertex);
     printf("Parcurgere cu DFS: ");
     DFS(graph, starting_vertex);
-    wipe_visited_list(graph, totalVertices);
     
+    wipe_visited_list(graph, totalVertices);
     printf("\nDe unde plecam in BFS? ");
     scanf("%d", &starting_vertex);
     printf("Parcurgere cu BFS: ");
